@@ -15,7 +15,7 @@ namespace CustomArray
 
             int[] nm= new int[range];
             int menor= int.MaxValue;
-            int maior=0;
+            int maior=int.MinValue;
             for (int i = 0; i < range; i++)
             {
                 Console.WriteLine("Digite o Número " + (i+1) + ": ");
@@ -25,7 +25,7 @@ namespace CustomArray
                 if (nm[i] >= maior){ maior = nm[i]; }
             }
 
-            Console.Write("Números");
+            Console.Write("Números:");
             for (int i = 0; i < range; i++)
             {
                 Console.Write(" "+nm[i]+" ");
